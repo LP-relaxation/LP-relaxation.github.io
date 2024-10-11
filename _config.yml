@@ -38,13 +38,3 @@ defaults:
       type: post
     values:
       tags: Other
-
-header_pages:
-  - index.md
-  - archive.md
-
-navbar_links:
-  - title: Home
-    url: /
-  - title: Archive
-    url: /archive/
