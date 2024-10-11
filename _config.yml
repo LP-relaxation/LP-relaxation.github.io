@@ -20,8 +20,6 @@ author: "LP"
 #########################################################################################
 theme: "minima"
 
-rss: rss
-
 kramdown:
   syntax_highlighter_opts:
     disable: true
@@ -40,3 +38,13 @@ defaults:
       type: post
     values:
       tags: Other
+
+header_pages:
+  - index.md
+  - archive.md
+
+navbar_links:
+  - title: Home
+    url: /
+  - title: Archive
+    url: /archive/
