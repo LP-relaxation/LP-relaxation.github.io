@@ -1,0 +1,26 @@
+DefaultContentLanguage = "en"
+baseURL = "https://lp-relaxation.github.io/"
+languageCode = "en-us"
+title = "LP Relaxes"
+theme = "anubis2"
+
+[params]
+math = true
+dateFormat = "2006-1-1"
+postDateFormat = "2006-1-1"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+  [markup.highlight]
+    style = "base16-snazzy"
+
+[menu]
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/"
+    weight = 2
