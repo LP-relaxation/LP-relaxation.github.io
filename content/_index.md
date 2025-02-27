@@ -10,7 +10,7 @@ I studied mathematics (undergraduate) and operations research (masters and Ph.D.
 
 I started this website to motivate myself to write more, both for myself (to think more deeply) and for others (to share knowledge and ideas).[^fn1] 
 
-I like [board games](https://store.stonemaiergames.com/products/wingspan-oceania-expansion)[^fn2], [music](https://nalasinephro.bandcamp.com/album/endlessness), [movies](https://www.thebeverlytheater.com/news/the-untold-story-of-le-samourai), long walks and runs to explore a city or park, sneakers, and coffee. These days I'm trying to become a better cook, overcome my fear of heights in top roping, work on my boxing footwork, and use a sewing machine. 
+I like [board games](https://store.stonemaiergames.com/products/wingspan-oceania-expansion)[^fn2], [music](https://nalasinephro.bandcamp.com/album/endlessness), [movies](https://www.thebeverlytheater.com/news/the-untold-story-of-le-samourai), long walks and runs to explore a city or park, sneakers, and coffee. These days I'm trying to [become a better cook](https://www.saltfatacidheat.com/), overcome my fear of heights in top roping, work on my boxing footwork, and use a sewing machine. 
 
 [^fn1]: My personal philosophy is that *playing and persuading* are crucial ways to learn something deeply. (Hm... can I trademark this?) And in my opinion, writing *is* persuasion -- I mean, step $0$ is to convince the reader that continuing to read is worth their time. 
 
