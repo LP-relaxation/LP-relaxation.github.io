@@ -48,47 +48,71 @@ export default function Home({ posts }) {
 <footer>
   <p> Blog by LP. Template by <a href="https://github.com/vercel/next-learn/tree/main/basics/learn-starter" target="_blank" rel="noopener noreferrer">Vercel.</a> </p>
 </footer>
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          flex-wrap: nowrap;
-          white-space: nowrap;
-          justify-content: center;
-          align-items: center;
-        }
-        footer p {
-          margin: 0;  /* Removes default paragraph margin */
-        }
-        footer a {
-          display: inline;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-      `}</style>
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
+<style jsx>{`
+  main {
+    /* Mobile-first: Start with mobile styles */
+    padding: 3rem 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Only add more padding on larger screens */
+  @media (min-width: 769px) {
+    main {
+      padding: 5rem 2rem;
+    }
+  }
+  
+  footer {
+    width: 100%;
+    height: auto;  /* Changed from 100px */
+    min-height: 100px;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+  }
+  
+  footer p {
+    margin: 0;
+    text-align: center;
+  }
+  
+  footer a {
+    display: inline;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Desktop styles */
+  @media (min-width: 769px) {
+    footer {
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      padding: 0 2rem;
+    }
+  }
+`}</style>
+
+<style jsx global>{`
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+`}</style>
     </div>
   );
 }

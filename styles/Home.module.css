@@ -1,10 +1,39 @@
+/* MOBILE-FIRST Home.module.css */
+/* Start with mobile styles, then add desktop styles with min-width */
+
 .container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+  min-height: auto;  /* Let content determine height on mobile */
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Add min-height only on desktop */
+@media (min-width: 769px) {
+  .container {
+    min-height: 100vh;
+  }
+}
+
+.title {
+  margin: 0 0 1rem;
+  line-height: 1.15;
+  font-size: 2rem;  /* Start with mobile size */
+  text-align: center;
+  padding: 0 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Larger title on desktop */
+@media (min-width: 769px) {
+  .title {
+    font-size: 3.6rem;
+  }
 }
 
 .title a {
@@ -18,37 +47,68 @@
   text-decoration: underline;
 }
 
-.title {
-  margin: 0 0 1rem;
-  line-height: 1.15;
-  font-size: 3.6rem;
-}
-
-.title {
-  text-align: center;
-}
-
-.title,
 .description {
   text-align: center;
-}
-
-.description {
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.2rem;  /* Start with mobile size */
+  padding: 0 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 769px) {
+  .description {
+    font-size: 1.5rem;
+  }
+}
+
+.about {
+  max-width: 800px; 
+  text-align: center;
+  margin: 1.5rem auto;
+  line-height: 1.6;
+  width: 100%;
+  padding: 0 1.5rem;  /* Always have padding */
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+@media (min-width: 769px) {
+  .about {
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+}
+
+.about a {
+  margin-right: 0.3em;
 }
 
 .grid {
   display: grid;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  flex-wrap: wrap;
-
   max-width: 800px;
-  margin-top: 3rem;
+  width: 100%;
+  margin-top: 2rem;
+  grid-template-columns: 1fr;  /* Start with single column */
+  gap: 1rem;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
 
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  align-items: stretch; /* makes all cards in a row the same height */
+/* Two columns on tablets and up */
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (min-width: 769px) {
+  .grid {
+    margin-top: 3rem;
+    padding: 0 2rem;
+  }
 }
 
 .cardImage {
@@ -61,20 +121,24 @@
 }
 
 .card {
-  margin: 1rem;
   display: flex;
   flex-direction: column;
-  height: 100%; /* fills the grid cell */
-  flex-basis: 45%;
-  padding: 1.5rem;
+  height: 100%;
+  padding: 1rem;  /* Start with mobile padding */
   text-align: left;
   color: inherit;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
-  transition:
-    color 0.15s ease,
-    border-color 0.15s ease;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 769px) {
+  .card {
+    padding: 1.5rem;
+  }
 }
 
 .card:hover,
@@ -86,34 +150,48 @@
 
 .card h3 {
   margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 769px) {
+  .card h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .card p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
   padding: 0;
+}
+
+@media (min-width: 769px) {
+  .card p {
+    font-size: 1.25rem;
+  }
 }
 
 .logo {
   height: 1em;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+/* Extra small phones */
+@media (max-width: 375px) {
+  .title {
+    font-size: 1.8rem;
   }
-}
-
-.about a {
-  margin-right: 0.3em;
-}
-
-.about {
-  max-width: 800px; 
-  text-align: center;
-  margin: 2rem auto;
-  line-height: 1.6;
+  
+  .description {
+    font-size: 1.1rem;
+  }
+  
+  .about {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+  
+  .grid {
+    padding: 0 1rem;
+  }
 }
