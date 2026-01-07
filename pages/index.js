@@ -9,7 +9,7 @@ export default function Home({ posts }) {
     <div className={styles.container}>
       <Head>
         <title>LP Relaxes</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <main>
         <h1 className={styles.title}>
