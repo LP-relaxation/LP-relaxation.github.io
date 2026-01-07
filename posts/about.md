@@ -19,4 +19,4 @@ pinned: true
 # Recently
 
 - Tested out some waterproof pants while hiking in the rain and show in [Yosemite](https://www.yosemite.com/top-winter-hikes/) (they're a game changer).
-- Finished Huyen's ["AI Engineering,"](https://www.oreilly.com/library/view/ai-engineering/9781098166298/) Tunstall et al.'s ["Natural Language Processing with Transformers,"](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/) and Bhargava's ["Grokking Algorithms"](https://www.oreilly.com/library/view/grokking-algorithms-second/9781633438538/)
+- Finished Huyen's ["AI Engineering,"](https://www.oreilly.com/library/view/ai-engineering/9781098166298/) Tunstall et al.'s ["Natural Language Processing with Transformers,"](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/) and Bhargava's ["Grokking Algorithms."](https://www.oreilly.com/library/view/grokking-algorithms-second/9781633438538/)
