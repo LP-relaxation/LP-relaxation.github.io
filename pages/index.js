@@ -50,8 +50,6 @@ export default function Home({ posts }) {
 </footer>
 <style jsx>{`
   main {
-    /* Mobile-first: Start with mobile styles */
-    padding: 3rem 1.5rem;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -59,13 +57,6 @@ export default function Home({ posts }) {
     align-items: center;
     width: 100%;
     max-width: 100%;
-  }
-  
-  /* Only add more padding on larger screens */
-  @media (min-width: 769px) {
-    main {
-      padding: 5rem 2rem;
-    }
   }
   
   footer {
